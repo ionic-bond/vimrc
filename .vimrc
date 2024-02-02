@@ -42,8 +42,11 @@ set shiftwidth=2
 " Tab键的宽度 
 "set tabstop=2
 
-" 智能tab空格数量
+" 智能Tab空格数量
 set smarttab
+
+" Tab用空格代替
+set expandtab
 
 " 显示行号
 set number
@@ -146,70 +149,4 @@ map <F10> :w<CR>:!python %<CR>
 " 从系统剪切板复制粘贴
 map <F3> gg"+yG
 map <F4> "+p
-
-" ---------------------编程竞赛模版
-
-map <F5> :call SetTitle()<CR>
-func SetTitle()
-let l = 0
-let l = l + 1 | call setline(l,'#include <iostream>')
-let l = l + 1 | call setline(l,'#include <cstdio>')
-let l = l + 1 | call setline(l,'#include <cmath>')
-let l = l + 1 | call setline(l,'#include <cstring>')
-let l = l + 1 | call setline(l,'#include <cstdlib>')
-let l = l + 1 | call setline(l,'#include <algorithm>')
-let l = l + 1 | call setline(l,'#include <vector>')
-let l = l + 1 | call setline(l,'#include <queue>')
-let l = l + 1 | call setline(l,'#include <stack>')
-let l = l + 1 | call setline(l,'#include <set>')
-let l = l + 1 | call setline(l,'#include <map>')
-let l = l + 1 | call setline(l,'#include <string>')
-let l = l + 1 | call setline(l,'#include <bitset>')
-let l = l + 1 | call setline(l,'using namespace std;')
-let l = l + 1 | call setline(l,'')
-let l = l + 1 | call setline(l,'#define LL long long')
-let l = l + 1 | call setline(l,'#define ULL unsigned long long')
-let l = l + 1 | call setline(l,'#define PB push_back')
-let l = l + 1 | call setline(l,'#define MP make_pair')
-let l = l + 1 | call setline(l,'#define PII pair<int,int>')
-let l = l + 1 | call setline(l,'#define VI vector<int>')
-let l = l + 1 | call setline(l,'#define VPII vector<PII>')
-let l = l + 1 | call setline(l,'#define X first')
-let l = l + 1 | call setline(l,'#define Y second')
-let l = l + 1 | call setline(l,'#define IOS ios::sync_with_stdio(0);cin.tie(0);')
-let l = l + 1 | call setline(l,'#define IN freopen("in", "r", stdin);')
-let l = l + 1 | call setline(l,'#define OUT freopen("out", "w", stdout);')
-let l = l + 1 | call setline(l,'')
-let l = l + 1 | call setline(l,'int main()')
-let l = l + 1 | call setline(l,'{')
-let l = l + 1 | call setline(l,'  IN;')
-let l = l + 1 | call setline(l,'  return 0;')
-let l = l + 1 | call setline(l,'}')
-endfunc
-
-map <F6> :call SetTitle2()<CR>
-func SetTitle2()
-let l = 0
-let l = l + 1 | call setline(l,'#include <bits/stdc++.h>')
-let l = l + 1 | call setline(l,'using namespace std;')
-let l = l + 1 | call setline(l,'')
-let l = l + 1 | call setline(l,'#define LL long long')
-let l = l + 1 | call setline(l,'#define ULL unsigned long long')
-let l = l + 1 | call setline(l,'#define PB push_back')
-let l = l + 1 | call setline(l,'#define MP make_pair')
-let l = l + 1 | call setline(l,'#define PII pair<int,int>')
-let l = l + 1 | call setline(l,'#define VI vector<int>')
-let l = l + 1 | call setline(l,'#define VPII vector<PII>')
-let l = l + 1 | call setline(l,'#define X first')
-let l = l + 1 | call setline(l,'#define Y second')
-let l = l + 1 | call setline(l,'#define IOS ios::sync_with_stdio(0);cin.tie(0);')
-let l = l + 1 | call setline(l,'#define IN freopen("in", "r", stdin);')
-let l = l + 1 | call setline(l,'#define OUT freopen("out", "w", stdout);')
-let l = l + 1 | call setline(l,'')
-let l = l + 1 | call setline(l,'int main()')
-let l = l + 1 | call setline(l,'{')
-let l = l + 1 | call setline(l,'  IN;')
-let l = l + 1 | call setline(l,'  return 0;')
-let l = l + 1 | call setline(l,'}')
-endfunc
 
