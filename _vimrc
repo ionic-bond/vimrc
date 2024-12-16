@@ -1,162 +1,162 @@
 " For Windows gVim
-" Edit by ion 2018/05/20
+" Edit by ion 2024/12/17
 
-" ---------------------ÆäËûÉèÖÃ
+" ---------------------å…¶ä»–è®¾ç½®
 
-" ÆğÊ¼Î»ÖÃ
-"exec 'cd ' . fnameescape('G:\ACM\code')
+" èµ·å§‹ä½ç½®
+"exec 'cd ' . fnameescape('Z:\Program\Context')
 
-" ´°¿ÚÆô¶¯Ê±×Ô¶¯×î´ó»¯
+" çª—å£å¯åŠ¨æ—¶è‡ªåŠ¨æœ€å¤§åŒ–
 au GUIEnter * simalt ~x
 
-" Òş²Ø¹¤¾ßÀ¸
+" éšè—å·¥å…·æ 
 set guioptions-=T
 
-" Òş²Ø²Ëµ¥À¸
+" éšè—èœå•æ 
 "set guioptions-=m
 
-" Ö÷Ìâ
+" ä¸»é¢˜
 colorscheme jellybeans
 
-" ×ÖÌå
+" å­—ä½“
 set guifont=Consolas:h14
 
-" ÏÔÊ¾×´Ì¬À¸
+" æ˜¾ç¤ºçŠ¶æ€æ 
 set laststatus=2
 
-" ÉèÖÃ×´Ì¬À¸Ö÷Ìâ·ç¸ñ
+" è®¾ç½®çŠ¶æ€æ ä¸»é¢˜é£æ ¼
 let g:Powerline_colorscheme='solarized256'
 
-" ²»ÒªÊ¹ÓÃviµÄ¼üÅÌÄ£Ê½£¬¶øÊÇvim×Ô¼ºµÄ
+" ä¸è¦ä½¿ç”¨viçš„é”®ç›˜æ¨¡å¼ï¼Œè€Œæ˜¯vimè‡ªå·±çš„
 set nocp
 set nocompatible
 
-" ÏÔÊ¾ÃüÁîÌáÊ¾
+" æ˜¾ç¤ºå‘½ä»¤æç¤º
 set showcmd
 
-" ÓïÑÔÉ«²Ê
+" è¯­è¨€è‰²å½©
 syntax enable
 
-" Óï·¨¸ßÁÁ 
+" è¯­æ³•é«˜äº® 
 syntax on
 
-" ×Ô¶¯Ëõ½ø 
+" è‡ªåŠ¨ç¼©è¿› 
 set autoindent
 
-" Ê¹ÓÃcÓïÑÔµÄËõ½ø
+" ä½¿ç”¨cè¯­è¨€çš„ç¼©è¿›
 set cindent
 
-" Í³Ò»Ëõ½øÎª2
+" ç»Ÿä¸€ç¼©è¿›ä¸º2
 set softtabstop=2
 set shiftwidth=2
 
-" Tab¼üµÄ¿í¶È 
+" Tabé”®çš„å®½åº¦ 
 "set tabstop=2
 
-" ÖÇÄÜtab¿Õ¸ñÊıÁ¿
+" æ™ºèƒ½tabç©ºæ ¼æ•°é‡
 set smarttab
 
-" ÏÔÊ¾ĞĞºÅ
+" æ˜¾ç¤ºè¡Œå·
 set number
 
-" ÀúÊ·¼ÇÂ¼Êı 
+" å†å²è®°å½•æ•° 
 set history=100
 
-" ËÑË÷ºöÂÔ´óĞ¡Ğ´ 
+" æœç´¢å¿½ç•¥å¤§å°å†™ 
 set ignorecase
 
-" ËÑË÷Öğ×Ö·û¸ßÁÁ 
+" æœç´¢é€å­—ç¬¦é«˜äº® 
 set hlsearch
 
-" ºöÂÔ´óĞ¡Ğ´ËÑË÷
+" å¿½ç•¥å¤§å°å†™æœç´¢
 set incsearch
 
-" ĞĞÄÚÌæ»» 
+" è¡Œå†…æ›¿æ¢ 
 set gdefault
 
-" ÔÚ±à¼­¹ı³ÌÖĞ£¬ÔÚÓÒÏÂ½ÇÏÔÊ¾¹â±êÎ»ÖÃµÄ×´Ì¬ĞĞ
+" åœ¨ç¼–è¾‘è¿‡ç¨‹ä¸­ï¼Œåœ¨å³ä¸‹è§’æ˜¾ç¤ºå…‰æ ‡ä½ç½®çš„çŠ¶æ€è¡Œ
 set ruler
 
-" Õì²âÎÄ¼şÀàĞÍ
+" ä¾¦æµ‹æ–‡ä»¶ç±»å‹
 filetype on
 
-" ÔØÈëÎÄ¼şÀàĞÍ²å¼ş
+" è½½å…¥æ–‡ä»¶ç±»å‹æ’ä»¶
 filetype plugin on
 
-" ÎªÌØ¶¨ÎÄ¼şÀàĞÍÔØÈëÏà¹ØËõ½øÎÄ¼ş
+" ä¸ºç‰¹å®šæ–‡ä»¶ç±»å‹è½½å…¥ç›¸å…³ç¼©è¿›æ–‡ä»¶
 filetype indent on
 
-" ÔöÇ¿Ä£Ê½ÖĞµÄÃüÁîĞĞ×Ô¶¯Íê³É²Ù×÷
+" å¢å¼ºæ¨¡å¼ä¸­çš„å‘½ä»¤è¡Œè‡ªåŠ¨å®Œæˆæ“ä½œ
 set wildmenu
 
-" Ê¹»Ø¸ñ¼ü£¨backspace£©Õı³£´¦Àíindent, eol, startµÈ
+" ä½¿å›æ ¼é”®ï¼ˆbackspaceï¼‰æ­£å¸¸å¤„ç†indent, eol, startç­‰
 set backspace=2
 
-" ÔÊĞíbackspaceºÍ¹â±ê¼ü¿çÔ½ĞĞ±ß½ç
+" å…è®¸backspaceå’Œå…‰æ ‡é”®è·¨è¶Šè¡Œè¾¹ç•Œ
 set backspace=indent,eol,start
 
-" ¸ßÁÁËÑË÷
+" é«˜äº®æœç´¢
 set hlsearch
 
-" ¿ÉÒÔÔÚbufferµÄÈÎºÎµØ·½Ê¹ÓÃÊó±ê£¨ÀàËÆofficeÖĞÔÚ¹¤×÷ÇøË«»÷Êó±ê¶¨Î»£©
+" å¯ä»¥åœ¨bufferçš„ä»»ä½•åœ°æ–¹ä½¿ç”¨é¼ æ ‡ï¼ˆç±»ä¼¼officeä¸­åœ¨å·¥ä½œåŒºåŒå‡»é¼ æ ‡å®šä½ï¼‰
 set mouse=a
 set mouse=v
 set selection=exclusive
 set selectmode=mouse,key
 
-" ¸ßÁÁÏÔÊ¾Æ¥ÅäµÄÀ¨ºÅ
+" é«˜äº®æ˜¾ç¤ºåŒ¹é…çš„æ‹¬å·
 set showmatch
 
-" Æ¥ÅäÀ¨ºÅ¸ßÁÁµÄÊ±¼ä£¨µ¥Î»ÊÇÊ®·ÖÖ®Ò»Ãë£©
+" åŒ¹é…æ‹¬å·é«˜äº®çš„æ—¶é—´ï¼ˆå•ä½æ˜¯ååˆ†ä¹‹ä¸€ç§’ï¼‰
 set matchtime=5
 
-" ÉèÖÃÖÇÄÜËõ½ø
+" è®¾ç½®æ™ºèƒ½ç¼©è¿›
 set smartindent
 
-" ¸ßÁÁ¹â±êËùÔÚĞĞºÍÁĞ
+" é«˜äº®å…‰æ ‡æ‰€åœ¨è¡Œå’Œåˆ—
 set cursorline
 set cursorcolumn
 
-" ±àÂëÉèÖÃ 
+" ç¼–ç è®¾ç½® 
 "let &termencoding=&encoding
 "set fileencodings=utf-8,gbk,ucs-bom,cp936
 "set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
 "set termencoding=euc-cn encoding=utf8
 
-" ºöÂÔ´óĞ¡Ğ´
+" å¿½ç•¥å¤§å°å†™
 set ignorecase
 
-" ¶¥²¿ºÍµ×²¿»º³åĞĞ
+" é¡¶éƒ¨å’Œåº•éƒ¨ç¼“å†²è¡Œ
 set scrolloff=5
 
-" gvimÏÂ¹â±ê²»ÉÁË¸
+" gvimä¸‹å…‰æ ‡ä¸é—ªçƒ
 set guicursor+=a:blinkon0
 
-" ´óÀ¨ºÅ×Ô¶¯²¹³ä
+" å¤§æ‹¬å·è‡ªåŠ¨è¡¥å……
 autocmd FileType cpp imap { {<CR>}<ESC>kA
 
-" Ò»¼ü±àÒëC++
+" ä¸€é”®ç¼–è¯‘C++
 map <F8> :call CR()<CR>
 func! CR()
 exec "w"
-exec "!g++ -std=c++17 % -o %<"
+exec "!g++ -std=c++23 % -o %<"
 endfunc
 
-" Ò»¼ü±àÒëÔËĞĞC++
+" ä¸€é”®ç¼–è¯‘è¿è¡ŒC++
 map <F9> :call RUN()<CR>
 func! RUN()
 call CR()
 exec "! %<"
 endfunc
 
-" ÔËĞĞPython
+" è¿è¡ŒPython
 map <F10> :w<CR>:!python %<CR>
 
-" ´ÓÏµÍ³¼ôÇĞ°å¸´ÖÆÕ³Ìù
+" ä»ç³»ç»Ÿå‰ªåˆ‡æ¿å¤åˆ¶ç²˜è´´
 map <F3> gg"+yG
 map <F4> "+p
 
-" ---------------------±à³Ì¾ºÈüÄ£°æ
+" ---------------------ç¼–ç¨‹ç«èµ›æ¨¡ç‰ˆ
 
 map <F5> :call SetTitle()<CR>
 func SetTitle()
